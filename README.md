@@ -2,17 +2,15 @@
 
 This repository contains Group59 solution to the Homework5. The solution is based on retraining the MobilenetV1.
 
-References: 
-
+#### References
 Retrain MobileNet for the web: (https://github.com/woudsma/retrain-mobilenet-for-the-web)
 
+TensorFlow for poets 2: (https://github.com/googlecodelabs/tensorflow-for-poets-2)
 
-Operating system and software:
-
+#### System
 MacOS Mojave version 10.14
 
 Python version 3.7
-
 
 ## 0. Initialization
 
