@@ -9,9 +9,11 @@ Python version 3.7
 
 ## 0. Initialization
 
-In this exersice we used the Kaggle Fruits-360 dataset. The dataset was alreaydy split to Test and Training set. The training set is in the folder dataset and the test set in folder Test. We erased the specific fruits from the sets that we were not suppose to used.
+In this exersice we used the Kaggle Fruits-360 dataset. The dataset is alreaydy splitted to test set and training set. The training set is in the folder named dataset and the test set is in the folder named Test. The specific fruits were erased from the folders that was not included to this exercise.
 
-The program used to retrain and evaluate the MobilenetV1 can be upload from:
+Kaggle Fruits-360 dataset: (https://www.kaggle.com/moltean/fruits)
+
+The programs used to retrain and evaluate the MobilenetV1 can be upload from:
 
 TensorFlow for poets 2: (https://github.com/googlecodelabs/tensorflow-for-poets-2)
 
@@ -51,7 +53,7 @@ python -m scripts.retrain \
 
 ## 2. Evaluating the results
 
-We used the evaluate.py program to evaluate the results. We used the test set of kaggle Fruits-360 dataset to obtain the test results.
+We used the evaluate.py program to evaluate the results (Input and output layers must be modified to the program). The test set was used to obtain the test results.
 
 ```sh
 python evaluate.py retrained_graph.pb
