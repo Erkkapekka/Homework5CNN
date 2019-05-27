@@ -9,7 +9,7 @@ Python version 3.7
 
 ## 0. Initialization
 
-In this exersice we used the Kaggle Fruits-360 dataset. The dataset is alreaydy splitted to test set and training set. The training set is in the folder named dataset and the test set is in the folder named Test. The specific fruits were erased from the folders that was not included to this exercise.
+In this exersice we used the Kaggle Fruits-360 dataset. The dataset is alreaydy splitted to test set and training set. The training set is in the folder named dataset and the test set is in the folder named Test. The specific fruits that was not included in this exercise were erased.
 
 Kaggle Fruits-360 dataset: (https://www.kaggle.com/moltean/fruits)
 
