@@ -1,22 +1,30 @@
 # Homework 5 - Machine Learning
 
-This repository contains how Group59 solved the hw5 problem with retraining MobileNet V1.
+This repository contains Group59 solution to the Homework5 problem. The solution is based on retraining the MobilenetV1.
 
 Operating system and software:
-The operating system used in this homework was the MacOS Mojave v.10.14 and the Python v.3.7
+
+The operating system used MacOS Mojave version 10.14 and the Python version 3.7
 
 
 ## 0. Initialization
 
+In this exersice we used the Kaggle Fruits-360 dataset. The dataset was alreaydy split to Test and Training set. The training set is in the folder dataset and the test set in folder Test. We erased the specific fruits from the sets that we were not suppose to used.
+
+The folders contains alreaydy the model, bottleneck files, the label file and the graph file. Delete those files before retraining.
+
 ## 1. Retrain a model using a pre-trained MobileNet V1
 
-To retrain model we used the retrain.py program.
+We retrained the pre-trained MobileNet V1 with new data and different input and output layers. To retrain the model we used the retrain.py program.
 
 ### The parameters:
 
 Image size = input layers
+
 Architecture = the version + input layers
+
 How many learning steps = Epochs
+
 Learning rate
 
 Code below uses architecture mobilenetv1 version 1.0 with 224 input layers on the web, epochs = 3000 and learning rate = 0.001
@@ -43,18 +51,26 @@ python -m scripts.retrain \
 
 ## 3. Evaluating the results
 
-There are alreaydy program evaluate.py We needed to changes few parts of the program before getting it to work on our problem.
-Then just running the program.
+We used the evaluate.py program to evaluate the results. We used the test set of kaggle Fruits-360 dataset to obtain the test results.
+
 ```sh
 python evaluate.py retrained_graph.pb
 ```
-For example this code the results looks like:
+For this net, the test results looks like this:
 
+```sh
 Accuracy: 0.968023
 Cross Entropy: 0.17778
-
+```
 
 ## 4. Optimizing the web
 
-When optimizing the net we used the different parameters and collecting the results.
+When optimizing the net we used the different parameters and collected the results.
+
+We changed the size of the input layer, the architecture of the web, number of epochs and learning rate.
+
+
+
+
+
 
