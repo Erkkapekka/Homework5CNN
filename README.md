@@ -56,7 +56,7 @@ python -m scripts.retrain \
   --learning_rate=0.001
 ```
 
-## 3. Evaluating the results
+## 2. Evaluating the results
 
 We used the evaluate.py program to evaluate the results. We used the test set of kaggle Fruits-360 dataset to obtain the test results.
 
@@ -85,7 +85,7 @@ python label_image.py \
 
 ```
 
-## 4. Optimizing the web
+## 3. Optimizing the web
 
 When optimizing the net we used the different parameters and collected the results.
 
