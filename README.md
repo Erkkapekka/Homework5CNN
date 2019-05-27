@@ -1,10 +1,17 @@
 # Homework 5 - Machine Learning
 
-This repository contains Group59 solution to the Homework5 problem. The solution is based on retraining the MobilenetV1.
+This repository contains Group59 solution to the Homework5. The solution is based on retraining the MobilenetV1.
+
+References: 
+
+Retrain MobileNet for the web: (https://github.com/woudsma/retrain-mobilenet-for-the-web)
+
 
 Operating system and software:
 
-The operating system used MacOS Mojave version 10.14 and the Python version 3.7
+MacOS Mojave version 10.14
+
+Python version 3.7
 
 
 ## 0. Initialization
@@ -61,6 +68,21 @@ For this net, the test results looks like this:
 ```sh
 Accuracy: 0.968023
 Cross Entropy: 0.17778
+```
+
+Using label_image.py is the option to recognize only one picture at the time.
+
+```sh
+IMAGE_SIZE=224
+
+python label_image.py \
+  --graph=retrained_graph.pb \
+  --input_width=$IMAGE_SIZE \
+  --input_height=$IMAGE_SIZE \
+  --image=tf_files/dataset/Lemon/0_100.jpg
+
+# Top result should be Lemon
+
 ```
 
 ## 4. Optimizing the web
