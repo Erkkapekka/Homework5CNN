@@ -71,6 +71,8 @@ When optimizing the net we used the different parameters and collected the resul
 
 We changed the size of the input layer, the architecture of the web, number of epochs and learning rate.
 
+![alt text](https://github.com/Erkkapekka/Homework5CNN/blob/master/Graph.png)
+
 ## References
 
 Retrain MobileNet for the web: (https://github.com/woudsma/retrain-mobilenet-for-the-web)
